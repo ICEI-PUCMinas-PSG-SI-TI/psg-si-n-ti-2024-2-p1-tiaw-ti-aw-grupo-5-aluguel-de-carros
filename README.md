@@ -16,6 +16,7 @@ Foca em construir infraestrutura resiliente, promover a industrialização inclu
 * Gilberto Henrique de Melo Dutra
 * Italo Cesar Lima Barbosa
 * Luiz Henrique Baptista Procópio Valle
+* Victor Augusto Bastos dos Santos
 
 ## Professores responsáveis
 
