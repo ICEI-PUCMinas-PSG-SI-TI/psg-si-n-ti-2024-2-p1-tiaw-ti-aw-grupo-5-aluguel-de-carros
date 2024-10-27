@@ -39,3 +39,10 @@
   display: none;
   width: 100%;
 }
+
+
+@media screen and (max-width: 600px){
+  #areaForm{
+    width: 100% !important;
+  }
+}
