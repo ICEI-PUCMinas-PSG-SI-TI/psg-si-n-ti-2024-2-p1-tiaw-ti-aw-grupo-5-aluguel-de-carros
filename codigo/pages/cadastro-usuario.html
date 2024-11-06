@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-info">
+    <div class="container mt-5">
+        <div id="areaForm" class="bg-white p-4 rounded shadow w-50">
+            <h2 class="text-center mb-4">Cadastro de Usuário</h2>
+            <div id="selecao-usuario">
+                <h3 class="text-center text-primary my-3">Bem vindo!</h3>
+                <h5>Para começar, informe como deseja se cadastrar</h5>
+                <button class="btn btn-outline-primary btn-block mb-3" onclick="MostrarFormulario('proprietario')">Proprietário de Veículo</button>
+                <button class="btn btn-outline-primary btn-block mb-4" onclick="MostrarFormulario('motorista')">Motorista</button>
+            </div>
+            
+            <!-- Formulário Proprietário de Veículo -->
+            <div id="form-proprietario" class="form-section">
+                <h4>Cadastro do Proprietário de Veículo</h4>
+    
+                <!-- Nome e Sobrenome -->
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="propNome">Nome</label>
+                        <input type="text" class="form-control" id="propNome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label for="propSobrenome">Sobrenome</label>
+                        <input type="text" class="form-control" id="propSobrenome" placeholder="Digite seu sobrenome">
+                    </div>
+                </div>
+
+                <!--email-->
+                <div class="form-group col px-0">
+                    <label for="propEmail">E-mail</label>
+                    <input type="text" class="form-control" id="propEmail" placeholder="Digite seu e-mail">
+                </div>
+    
+                <!-- CRV e DPVAT -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="propCRLV">CRV</label>
+                        <input type="text" class="form-control" id="propCRLV" placeholder="Digite seu CRV">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="propDPVAT">DPVAT</label>
+                        <input type="text" class="form-control" id="propDPVAT" placeholder="Digite DPVAT">
+                    </div>
+                </div>
+    
+                <!-- CPF/CNPJ e Data de nascimento -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="propCPF">CPF/CNPJ</label>
+                        <input type="text" class="form-control" id="propCPF" placeholder="Digite CPF/CNPJ">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="propDataNascimento">Data de nascimento</label>
+                        <input type="text" class="form-control" id="propDataNascimento" placeholder="Digite Data de nascimento">
+                    </div>
+                </div>
+    
+                <div id="botoes" class="botoes d-flex justify-content-between mt-4" style="display: none;">
+                    <button id="Voltar" class="btn btn-secondary" onclick="Voltar()">Voltar</button>
+                    <button class="btn btn-primary" onclick="Continuar()">Continuar</button>
+                </div>
+            </div>
+    
+            <!-- Formulário Motorista -->
+            <div id="form-motorista" class="form-section">
+                <h4 class="fw-bold">Cadastro do Motorista</h4>
+
+                <!-- Nome e Sobrenome -->
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="propNome">Nome</label>
+                        <input type="text" class="form-control" id="propNome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label for="propSobrenome">Sobrenome</label>
+                        <input type="text" class="form-control" id="propSobrenome" placeholder="Digite seu sobrenome">
+                    </div>
+                </div>
+
+                <!--email-->
+                <div class="form-group col px-0">
+                    <label for="propEmail">E-mail</label>
+                    <input type="text" class="form-control" id="propEmail" placeholder="Digite seu e-mail">
+                </div>
+    
+                <!-- CNH e Validade -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="propCNH">Nº Registro CNH</label>
+                        <input type="text" class="form-control" id="propCNH" placeholder="Digite o número da sua CNH">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="propValidade">Validade</label>
+                        <input type="text" class="form-control" id="propValidade" placeholder="Digite a Validade da CNH">
+                    </div>
+                </div>
+    
+                <!-- CPF/CNPJ e Data de nascimento -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="propCPF">CPF/CNPJ</label>
+                        <input type="text" class="form-control" id="propCPF" placeholder="Digite CPF/CNPJ">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="propDataNascimento">Data de nascimento</label>
+                        <input type="text" class="form-control" id="propDataNascimento" placeholder="Digite Data de nascimento">
+                    </div>
+                </div>
+
+                <div id="botoes" class="botoes d-flex justify-content-between mt-4" style="display: none;">
+                    <button id="Voltar" class="btn btn-secondary" onclick="Voltar()">Voltar</button>
+                    <button class="btn btn-primary" onclick="Continuar()">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/usuario/cadastro.js"></script>
+</body>
+</html>
