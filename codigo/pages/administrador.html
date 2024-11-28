@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConectCar Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/cores.css">
+  <link rel="stylesheet" href="../assets/css/administrador.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container-fluid">
+      <span class="navbar-brand fw-bold text-white">ConectCar</span>
+      <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center me-3 text-white">
+          <i class="bi bi-person-circle" style="font-size: 1.5rem; margin-right: 0.5rem;"></i>
+          <div style="line-height: 1;">
+            <span>Bem vindo,</span><br>
+            <strong>Administrador</strong>
+          </div>
+        </div>
+        <div class="position-relative text-white">
+          <i id="menuIcon" class="bi bi-list" style="font-size: 1.5rem; cursor: pointer;"></i>
+          <div id="miniMenu" class="mini-menu">
+            <a href="#">Perfil</a>
+            <a href="#">Configurações</a>
+            <a href="#">Sair</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Container Principal -->
+  <div class="container mt-4">
+    <!-- Barra de Pesquisa -->
+    <div class="mb-3 w-25">
+      <input type="text" class="form-control" id="searchBar" placeholder="Digite para pesquisar...">
+    </div>
+
+    <!-- Nav-tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="denunciadas-tab" data-bs-toggle="tab" data-bs-target="#denunciadas" type="button" role="tab" aria-controls="denunciadas" aria-selected="true">
+          Contas Denunciadas
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="banidas-tab" data-bs-toggle="tab" data-bs-target="#banidas" type="button" role="tab" aria-controls="banidas" aria-selected="false">
+          Contas Banidas
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="recuperacao-tab" data-bs-toggle="tab" data-bs-target="#recuperacao" type="button" role="tab" aria-controls="recuperacao" aria-selected="false">
+          Solicitações de Recuperação
+        </button>
+      </li>
+    </ul>
+
+    <!-- Nav-pills -->
+    <ul class="nav nav-pills my-3" id="filterPills" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="todos-pill" data-type="todos" type="button">
+          Todos
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="proprietario-pill" data-type="Proprietário" type="button">
+          Proprietário
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="motorista-pill" data-type="Motorista" type="button">
+          Motorista
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="denunciadas" role="tabpanel" aria-labelledby="denunciadas-tab">
+        <ul class="list-group" id="denunciadas-list"></ul>
+      </div>
+      <div class="tab-pane fade" id="banidas" role="tabpanel" aria-labelledby="banidas-tab">
+        <ul class="list-group" id="banidas-list"></ul>
+      </div>
+      <div class="tab-pane fade" id="recuperacao" role="tabpanel" aria-labelledby="recuperacao-tab">
+        <ul class="list-group" id="recuperacao-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/adm/administrador.js"></script>
+</body>
+</html>

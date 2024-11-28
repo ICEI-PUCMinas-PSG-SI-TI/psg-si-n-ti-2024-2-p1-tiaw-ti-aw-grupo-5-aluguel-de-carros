@@ -1,0 +1,51 @@
+.account-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .account-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+  }
+  
+  .mini-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: none;
+    z-index: 10;
+  }
+  
+  .mini-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    transition: background 0.2s;
+  }
+  
+  .mini-menu a:hover {
+    background: #f1f1f1;
+  }
+  
+  .nav-tabs .nav-link {
+    cursor: pointer;
+}
+
+.nav-tabs .nav-link.active {
+  color: #6c757d; /* Tom de cinza (pode ajustar a cor conforme necessário) */
+  background-color: transparent; /* Remove a cor de fundo, se necessário */
+}
