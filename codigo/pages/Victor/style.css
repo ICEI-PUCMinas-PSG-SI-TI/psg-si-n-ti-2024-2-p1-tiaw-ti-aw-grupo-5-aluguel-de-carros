@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white; /* Fundo azul */
+    color: #fff;
+    line-height: 1.6;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    padding: 10px;
+    background-color: #003d80; /* Azul mais escuro */
+    /* border-bottom: 4px solid #002855; */
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1rem;
+}
+
+/* Conteúdo Principal */
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seções */
+.form-section,
+.info-section {
+    background-color: #fff; /* Fundo branco */
+    color: #333; /* Texto escuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #0056b3; /* Azul médio */
+}
+
+/* Formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9; /* Levemente cinza */
+    color: #333; /* Texto escuro */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} */
+
+button:hover {
+    background-color: #003d80;
+}
+
+/* Informações de Con
