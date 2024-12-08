@@ -7,8 +7,88 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body class="bg-info">
-    <div class="container mt-5">
+<body>
+    <nav class="navbar bg-body-tertiary col-12">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="logo1" src="./telaPrincipal/img/logo.png" alt="Logo Marca"></a>
+        <!-- Sessão do Usuário -->
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="./telaPrincipal/img/user.png" alt="User Avatar">
+                    <h2>Roberto</h2>
+                </div>
+                <hr>
+                <a href="./telaUsuario/usuario.html" class="sub-menu-link">
+                    <img src="./telaUsuario/img/profile.png" alt="Imagem de perfil">
+                    <p>Usuário</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="./telaUsuario/img/setting.png" alt="Imagem de perfil">
+                    <p>Configurações</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="./telaUsuario/img/help.png" alt="Imagem de perfil">
+                    <p>Ajuda & Suporte</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="./telaUsuario/img/logout.png" alt="Imagem de perfil">
+                    <p>Sair</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Botão do Menu Hamburguer -->
+        <div class="itens-navbar">
+            <img src="./telaUsuario/img/user.png" alt="User Avatar" class="user-pic" onclick="toggleMenu()">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-dark"></span>
+            </button>
+            
+            <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Connect Car</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./telaPrincipal/TelaPrincipal.html">Tela principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pagamentos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Meus veículos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Veículos alugados</a></li>
+                                <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Quero alugar o meu veículo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-item" href="#">Suporte</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    </nav>
+    <div class="conteudo container mt-5">
         <div id="areaForm" class="bg-white p-4 rounded shadow w-50">
             <h2 class="text-center mb-4">Cadastro de Usuário</h2>
             <div id="selecao-usuario">
