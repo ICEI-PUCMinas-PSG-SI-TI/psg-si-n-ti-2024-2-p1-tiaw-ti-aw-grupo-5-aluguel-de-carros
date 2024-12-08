@@ -33,16 +33,19 @@
   .btn-outline-secondary {
     color: var(--secondary-color);
     border-color: var(--secondary-color);
+    color: #fff;
   }
   
   .btn-secondary{
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
+    color: #fff;
   }
   
   .btn-secondary:hover {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
+    color: #fff;
   }
   
   .text-secondary{
@@ -62,7 +65,7 @@
   }
 
   [class*="-secondary"] {
-    color: #0088FF !important;
+    /* color: #0088FF !important; */
     background-color: #0088FF !important;
     border-color: #0088FF !important;
 }

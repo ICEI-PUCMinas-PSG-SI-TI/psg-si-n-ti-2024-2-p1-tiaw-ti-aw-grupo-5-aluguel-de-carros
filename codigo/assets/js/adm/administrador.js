@@ -49,7 +49,7 @@ function renderList(category, filter = "todos", search = "") {
             <small>${account.type}</small>
           </div>
         </div>
-        <button class="btn btn-primary btn-sm">Revisar</button>
+        <button onclick="abrirModal()" class="btn btn-primary btn-sm">Revisar</button>
       `;
 
       list.appendChild(listItem);
@@ -89,6 +89,10 @@ async function fetchAccounts(category) {
   } catch (error) {
     console.error("Erro ao buscar contas:", error);
   }
+}
+
+function abrirModal(){
+  new bootstrap.Modal("#modal").show();
 }
 
 // Função para criar uma conta
